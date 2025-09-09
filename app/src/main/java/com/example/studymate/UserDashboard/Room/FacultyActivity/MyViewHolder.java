@@ -1,0 +1,44 @@
+package com.example.studymate.UserDashboard.Room.FacultyActivity;
+
+import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.studymate.R;
+
+public class MyViewHolder extends RecyclerView.ViewHolder {
+
+    public RelativeLayout backgroundLayout;
+    private TextView recTitle, recDesc, personCount;
+    private CardView recCard;
+
+
+    public MyViewHolder(@NonNull View itemView) {
+        super(itemView);
+        recCard = itemView.findViewById(R.id.recCard);
+        recDesc = itemView.findViewById(R.id.recRoomDesc);
+        recTitle = itemView.findViewById(R.id.recRoomTitle);
+        personCount = itemView.findViewById(R.id.recUserCount);
+        backgroundLayout = itemView.findViewById(R.id.backgroundLayout);
+    }
+
+    public TextView getRecTitle() {
+        return recTitle;
+    }
+
+    public TextView getRecDesc() {
+        return recDesc;
+    }
+
+    public TextView getPersonCount() {
+        return personCount;
+    }
+
+    public CardView getRecCard() {
+        return recCard;
+    }
+}

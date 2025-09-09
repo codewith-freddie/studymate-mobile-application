@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTextView"
+        android:text="Upload Link"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_grey" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTextView"
+        android:id="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/undraw_link"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:background="@drawable/border_rectangle"
+        android:id="@+id/linkTitle"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:hint="Enter the link title..."
+        android:gravity="start|center_vertical"
+        android:textColor="@color/light_gray"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/createInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linkTitle"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/border_rectangle"
+        android:hint="What is your instructions?"
+        android:gravity="top|start"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="5"
+        android:maxLines="10"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_below="@id/createInstructions"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/link"
+        android:textSize="12sp"
+        android:textColor="@color/light_gray"
+        android:justificationMode="inter_word"
+        android:id="@+id/textFormat"
+        android:visibility="visible"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textFormat"
+        android:background="@drawable/border_rectangle"
+        android:id="@+id/linkUrl"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:hint="Paste the link here..."
+        android:gravity="start|center_vertical"
+        android:textColor="@color/light_gray"
+        android:inputType="textUri"/>
+
+    <!-- Buttons layout at the bottom -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Cancel Button as TextView -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rectangle_filled"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/cancelButton"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:clickable="true"
+            android:layout_marginEnd="10dp"
+            app:cornerRadius="12dp"/>
+
+        <!-- Update Button -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rectangle"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:id="@+id/uploadLinkButton"
+            android:textSize="20sp"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+</RelativeLayout>

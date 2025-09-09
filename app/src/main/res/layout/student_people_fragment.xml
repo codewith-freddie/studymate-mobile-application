@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserDashboard.Room.FacultyActivity.People.PeopleFragment">
+
+    <!-- Toolbar with Search and Back Button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- Back button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:contentDescription="Back button"
+            android:padding="8dp" />
+
+        <!-- People text -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:paddingStart="16dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/cardviewContainer"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/green"
+                android:background="@color/cream_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desAccessCode"
+                    android:text=""
+                    android:contentDescription="Access Code"
+                    android:textStyle="bold"
+                    android:textColor="@color/cream_white"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desRoomTitle"
+                    android:text=""
+                    android:contentDescription="Room Title"
+                    android:textStyle="bold"
+                    android:textColor="@color/cream_white"
+                    android:textSize="20sp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="20dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desRoomDesc"
+                    android:text=""
+                    android:contentDescription="Subtitle"
+                    android:textColor="@color/cream_white"
+                    android:textSize="15sp"
+                    android:layout_below="@id/desRoomTitle"
+                    android:layout_marginStart="20dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginBottom="12dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_person_24"
+                            app:tint="@color/cream_white" />
+
+                        <TextView
+                            android:id="@+id/desUserCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:contentDescription="Student Counts"
+                            android:textAlignment="center"
+                            android:textColor="@color/cream_white"
+                            android:textSize="15sp"
+                            android:layout_marginStart="8dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearContainer"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:layout_below="@id/cardviewContainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:id="@+id/info1"
+                android:text=""
+                android:contentDescription="Room Name"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/info2"
+                android:text=""
+                android:contentDescription="Description"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/info3"
+                android:text=""
+                android:contentDescription="Access Code"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="8dp"
+                android:id="@+id/info4"
+                android:text=""
+                android:contentDescription="Admin Name"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@id/linearContainer">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_person_24"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Vertical layout to hold the name and admin texts -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:contentDescription="Admin Name"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_grey"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:id="@+id/adminTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Admin"
+                    android:textStyle="italic|bold"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/allStudentsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Students"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/admin" />
+
+        <!-- Line separator (View) below 'All Students' -->
+        <View
+            android:id="@+id/lineSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/dark_grey"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/allStudentsTextView" />
+
+        <!-- RecyclerView to display the list of users -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lineSeparator"
+            android:layout_marginTop="8dp"
+            android:padding="0dp"
+            android:clipToPadding="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

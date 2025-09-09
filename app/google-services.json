@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "294687879691",
+    "firebase_url": "https://studymate-825a0-default-rtdb.firebaseio.com",
+    "project_id": "studymate-825a0",
+    "storage_bucket": "studymate-825a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294687879691:android:f8b8d77f29b59ec86dcd0e",
+        "android_client_info": {
+          "package_name": "com.example.prototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294687879691-hh5nep8h2o6312fvigoadonlful5tj1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEptoQCS-H_ADmB6y5xY0elmw9GuzlwA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294687879691-hh5nep8h2o6312fvigoadonlful5tj1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294687879691:android:6350ed0db468d9d36dcd0e",
+        "android_client_info": {
+          "package_name": "com.example.studymate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294687879691-hh5nep8h2o6312fvigoadonlful5tj1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEptoQCS-H_ADmB6y5xY0elmw9GuzlwA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294687879691-hh5nep8h2o6312fvigoadonlful5tj1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

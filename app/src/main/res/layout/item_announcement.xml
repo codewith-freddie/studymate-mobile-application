@@ -1,0 +1,122 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cream_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/title_background"
+            android:id="@+id/linearFrame">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/frame">
+
+                <!-- Background Circle -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/cream_white" />
+
+                <!-- Centered Image -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/recImage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_announcement_24"
+                    android:tint="@color/light_gray"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+            </FrameLayout>
+
+            <!-- Announcement Title -->
+            <TextView
+                android:id="@+id/announcementTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/frame"
+                android:layout_gravity="center_vertical"
+                android:text="Announcement:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cream_white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_more_vert_24"
+            app:tint="@color/dark_grey" />
+
+            <!-- Date and Time -->
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@id/menuButton"
+                android:text="Date and Time"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:textColor="@color/light_gray" />
+
+            <!-- Announcement Text (Body) -->
+            <TextView
+                android:id="@+id/announcementText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/linearFrame"
+                android:ellipsize="end"
+                android:justificationMode="inter_word"
+                android:maxLines="3"
+                android:textSize="14sp"
+                android:text="Announcement details go here..."
+                android:textColor="@color/dark_grey" />
+
+            <!-- Expand/Collapse Text ("More"/"Less") -->
+            <TextView
+                android:id="@+id/expandTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/announcementText"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:text="More"
+                android:textColor="@color/light_gray"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+

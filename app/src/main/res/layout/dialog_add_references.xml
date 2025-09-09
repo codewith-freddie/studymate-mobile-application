@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:padding="30dp"
+    android:background="@color/cream_white">
+
+    <!-- Content above the buttons -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add References"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_grey"
+        android:id="@+id/titleTextView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/titleTextView"
+        android:background="@drawable/border_rectangle"
+        android:id="@+id/linkUrl"
+        android:padding="10dp"
+        android:hint="Paste the link here..."
+        android:gravity="start"
+        android:textColor="@color/light_gray"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:maxLines="20"
+        android:scrollbars="horizontal|vertical" />
+
+    <ImageView
+        android:id="@+id/checkIcon"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linkUrl"
+        android:src="@drawable/baseline_error_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/linkUrl"
+        android:layout_toRightOf="@id/checkIcon"
+        android:text="Invalid Format"
+        android:textSize="17sp"
+        android:textColor="@color/red"
+        android:id="@+id/textChecker"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/textEx"
+        android:text="Format: "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/light_gray"
+        android:id="@+id/textFormatTitle"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/textFormatTitle"
+        android:layout_alignBaseline="@id/textFormatTitle"
+        android:text="Author lastname, Year, Title, Url"
+        android:textSize="16sp"
+        android:textColor="@color/light_gray"
+        android:id="@+id/textFormat"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/textEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/example_text"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:justificationMode="inter_word"
+        android:textColor="@color/light_gray"
+        android:visibility="visible"/>
+
+    <!-- Buttons layout at the bottom -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Cancel Button as TextView -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rectangle_filled"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/cancelButton"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:clickable="true"
+            android:layout_marginEnd="10dp"
+            app:cornerRadius="12dp"/>
+
+        <!-- Add Button -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rectangle"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:id="@+id/addReferencesButton"
+            android:textSize="20sp"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

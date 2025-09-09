@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:background="@drawable/custom_toast"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/displayQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Question"
+            android:background="@color/transparent"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/colorPrimary"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/colorPrimary"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/colorPrimary"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:buttonTint="@color/colorPrimary"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/displayOption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/light_gray"
+                    android:background="@color/transparent"
+                    android:hint="Choice 1"/>
+
+                <TextView
+                    android:id="@+id/displayOption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/light_gray"
+                    android:background="@color/transparent"
+                    android:hint="Choice 2"/>
+
+                <TextView
+                    android:id="@+id/displayOption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/light_gray"
+                    android:background="@color/transparent"
+                    android:hint="Choice 3"/>
+
+                <TextView
+                    android:id="@+id/displayOption4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/dark_grey"
+                    android:textColorHint="@color/light_gray"
+                    android:background="@color/transparent"
+                    android:hint="Choice 4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

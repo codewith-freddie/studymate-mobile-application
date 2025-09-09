@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Network.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_profile"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_profile_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserDashboard.Room.FacultyActivity.CreatorLeaderBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard.Room.StudentActivity.Leaderboard.StudentLeaderBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard.Profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfflineModules.PdfDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfflineModules.PdfListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserDashboard.Room.FacultyActivity.Home.PdfViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard.Room.FacultyActivity.FacultyActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserDashboard.Room.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard.Room.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard.Room.UploadActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AdminDashboard.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginDashboard.LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignUpDashboard.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserDashboard.UserMainActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- Add the missing ParticipantHomeActivity -->
+        <activity
+            android:name=".UserDashboard.Room.StudentActivity.ParticipantHomeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserDashboard.Room.StudentActivity.Home.ModuleViewerActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserDashboard.Room.FacultyActivity.Quiz.CreateQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard.Room.FacultyActivity.Quiz.QuizDetailActivity"
+            android:parentActivityName=".UserDashboard.Room.FacultyActivity.Quiz.QuizFragment" />
+
+        <activity
+            android:name=".UserDashboard.Room.FacultyActivity.QuizDisplay.QuizDisplayActivity"
+            android:parentActivityName=".UserDashboard.Room.FacultyActivity.QuizDisplay.QuizDisplayActivity" />
+
+        <activity android:name=".UserDashboard.Room.StudentActivity.Quizzes.QuizActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search View -->
+    <item
+        android:id="@+id/action_search"
+        android:title=""
+        android:icon="@drawable/baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_copy_access_code"
+        android:title="Copy Access Code"
+        android:icon="@drawable/baseline_content_copy_24"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_share_access_code"
+        android:title="Share Access Code"
+        android:icon="@drawable/baseline_share_24"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_leave"
+        android:title="Leave Room"
+        android:icon="@drawable/baseline_share_24"
+        app:showAsAction="never"/>
+</menu>

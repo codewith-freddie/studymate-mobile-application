@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/offlineModuleCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/baseline_more_vert_24"
+            app:tint="@color/dark_grey" />
+
+        <FrameLayout
+            android:id="@id/recImage"
+            android:layout_width="120dp"
+            android:layout_height="80dp">
+
+            <!-- Background Circle -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_shape"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/recImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_insert_drive_file_24"
+                android:tint="@color/cream_white"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/offlineModuleTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_alignParentEnd="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Title"
+            android:textColor="@color/dark_grey"
+            android:textSize="20sp"
+            android:lineSpacingExtra="2dp" />
+
+        <TextView
+            android:id="@+id/offlineModuleDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offlineModuleTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="desc"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

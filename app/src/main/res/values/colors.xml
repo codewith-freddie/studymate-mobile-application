@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="pale_blue">#D7EFE9</color>
+    <color name="red">#9A0D0A</color>
+    <color name="soft_red">#B90E0A</color>
+    <color name="sky_blue">#7E93FF</color>
+    <color name="gray">#F4F4F4</color>
+
+    <color name="green">#30C084</color>
+    <color name="cream_white">#F5F6F4</color>
+    <color name="light_gray">#606060</color>
+    <color name="dark_grey">#404040</color>
+
+    <!-- Primary brand color -->
+    <color name="colorPrimary">#30C084</color>
+    <color name="colorPrimaryVariant">#32AE7A</color>
+    <color name="colorOnPrimary">#30C084</color>
+    <color name="colorPrimaryDark">#0F4730</color>
+    <color name="colorAccent">#3BE49E</color>
+    <color name="colorPrimaryOne">#37D392</color>
+    <color name="colorPrimaryTwo">#26EB9A</color>
+    <color name="colorPrimaryThree">#50E9A9</color>
+
+    <!-- Secondary brand color -->
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background and text colors -->
+    <color name="backgroundColor">#F5F6F4</color>
+    <color name="textColor">#606060</color>
+
+    <color name="main">#00aac3</color>
+    <color name="grey">#B6B6B6</color>
+    <color name="transparent">#00000000</color>
+    <color name="green_light">#C6F7C1</color>
+    <color name="green_dark">#227302</color>
+    <color name="red_light">#F7C9C1</color>
+    <color name="red_dark">#A41901</color>
+
+    <color name="default_color">#30C084</color>
+
+    <!-- Define a custom style for the menu text -->
+    <style name="CustomMenuText" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textColor">#606060</item> <!-- Set your desired color here -->
+    </style>
+
+
+</resources>

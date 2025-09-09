@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:padding="30dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/uploadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Module"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_grey"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/uploadTitle"
+        android:id="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/module"/>
+
+    <ImageView
+        android:id="@+id/imageViewUpload"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_rectangle"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/baseline_file_upload_24" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageViewUpload"
+        android:id="@+id/uploadModuleTitle"
+        android:background="@drawable/border_rectangle"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:hint="Module Title"
+        android:gravity="start|center_vertical"
+        android:inputType="textCapSentences"
+        android:textColor="@color/light_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_below="@id/uploadModuleTitle"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/module"
+        android:textSize="12sp"
+        android:textColor="@color/light_gray"
+        android:justificationMode="inter_word"
+        android:id="@+id/textFormat"
+        android:visibility="visible"/>
+
+    <!-- Buttons layout at the bottom -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Cancel Button as TextView -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rectangle_filled"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/cancelButton"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:clickable="true"
+            android:layout_marginEnd="10dp"
+            app:cornerRadius="12dp"/>
+
+        <!-- Update Button -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rectangle"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:id="@+id/uploadModuleButton"
+            android:textSize="20sp"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>
